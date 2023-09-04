@@ -101,6 +101,16 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    // See https://stackoverflow.com/a/75395975
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    /*
+    kotlin {
+        jvmToolchain(11)
+    }
+    */
 }
 
 dependencies {
